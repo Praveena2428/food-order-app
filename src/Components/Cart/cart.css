@@ -86,6 +86,7 @@
   .summary_price {
     font-weight: bold;
     color: #8a2b06;
+    font-size: 20px;
   }
   
   .summary_amount {
@@ -129,4 +130,58 @@
     background-color: #8a2b06;
     color: white;
   }
+  .shopping-cart{
+    width: 60%;
+    
+}
+
+@media(max-width:600px){
+  .shopping-cart{
+    width: 70%;
+    padding: 10px;
+    max-height: 30rem;
+    overflow: auto;
+}
+.cart_items h2 {
+  font-size: 20px;
+}
+.cart-total {
+  font-size: 22px;
+}
+.actions{
+  justify-content: center;
+}
+.button,.close-btn {
+  font-size: 15px;
+  width: 25%;
+}
+}
+@media(max-width:425px){
+  .shopping-cart{
+    width: 80%;
+}
+.cart_items h2 {
+  font-size: 18px;
+}
+.cart-total {
+  font-size: 20px;
+}
+.cart_items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border: none;
+}  
+.summary {
+  width: 7rem;
+}
+.summary_price{
+  font-size: 18px;
+}
+
+}
+
+
   

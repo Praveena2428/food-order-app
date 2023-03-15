@@ -89,3 +89,40 @@ body{
     transform: scale(1);
   }
 }
+@media (max-width:600px) {
+  .header_button{
+    padding: 0.75rem 1rem;  
+  }
+  .heading h1{
+    font-size: 28px;
+  }
+  .Food_background img {
+    transform: none;
+    object-position: 10% 10%;
+   
+  }
+}
+@media(max-width:425px){
+  .heading h1{
+    font-size: 22px;
+  }
+  .heading{
+    height: 4rem;
+  }
+  .Food_background img {
+    object-position: 10% 90%;
+   
+  }
+  .header_button{
+    padding: 0.50rem 0.50rem; 
+  }
+  .icon{
+    width: 18px;
+    height:18px;
+  }
+  .badge{
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+  }
+ 
+}

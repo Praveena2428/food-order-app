@@ -36,9 +36,11 @@
 }
 .meal h3 {
   margin: 0 0 7px 0;
+  font-size: 21px;
 }
 .meal-dis {
   font-style: italic;
+  font-size: 18px;
 }
 .meal-price {
   margin-top: 7px;
@@ -66,6 +68,12 @@
 .meal_form{
   margin-right: 20px;
 }
+.lableStyle{
+  font-weight: bold;
+  margin-right: 10px;
+  font-size:20px;
+}
+
 @keyframes meals-appear {
   from {
     opacity: 0;
@@ -76,4 +84,63 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media(max-width:768px) {
+  .meal_summary h2 {
+    font-size: 28px;
+  }
+  .available_meal {
+    width: 80%;
+    
+  }
+}
+@media(max-width:600px) {
+  .available_meal {
+    /* margin: 30px auto 10px auto; */
+    width: 85%;
+  }
+  .meal_summary h2 {
+    font-size: 27px;
+  }
+  .meal_summary{
+    width: 55%;
+  }
+}
+@media(max-width:425px){
+  .available_meal {
+    width: 100%;
+  }
+  .meal_summary h2 {
+    font-size: 23px;
+  }
+  .meal_summary{
+    width: 65%;
+    margin-top: -150px;
+
+  }
+  .meal h3{
+    font-size: 17px;
+  }
+  .meal_form button{
+    width: 70%;
+    font-size: 15px;
+  }
+  .lableStyle{
+    margin-right: 0px;
+    font-size:16.5px;
+  }
+  .meal_form{
+    margin-right: 0px;
+  }
+  .meal-dis{
+    font-size: 16px;
+  }
+  .meal-price{
+    font-size: 18px;
+  }
+  .meal {
+    margin: 0.50rem;
+  }
+ 
 }

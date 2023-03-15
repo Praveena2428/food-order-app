@@ -1,4 +1,5 @@
 import React, { forwardRef } from "react";
+import "../Meals/Meal.css";
 
 const Input = forwardRef((props,ref) => {
   const inputItem = {
@@ -11,14 +12,9 @@ const Input = forwardRef((props,ref) => {
     alignItems: "center",
     marginBottom: "10px",
   };
-  const lableStyle = {
-    fontWeight: "bold",
-    marginRight: "10px",
-    fontSize:"18px"
-  };
   return (
     <div style={form}>
-      <label htmlFor={props.input.id} style={lableStyle}>
+      <label htmlFor={props.input.id} className="lableStyle">
         {props.label} 
       </label>
       <input ref={ref} {...props.input} style={inputItem}  />
